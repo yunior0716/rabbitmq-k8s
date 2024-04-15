@@ -10,6 +10,8 @@ docker push tuusuariodedocker/nombredelaapp:latest
 
 minikube start
 
+kubectl config use-context minikube
+
 kubectl create ns nombredelnamespace
 
 # Deploy
