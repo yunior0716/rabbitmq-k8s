@@ -1,6 +1,7 @@
 # Deploy apps to docker hub
 
 docker login
+
 docker build . -t tuusuariodedocker/nombredelaapp:latest
 
 docker push tuusuariodedocker/nombredelaapp:latest
