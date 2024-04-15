@@ -1,9 +1,9 @@
 # Deploy apps to docker hub
 
 docker login
-docker build . -t tu usuario de docker/nombredelaapp:latest
+docker build . -t tuusuariodedocker/nombredelaapp:latest
 
-docker push tu usuario de docker/nombredelaapp:latest
+docker push tuusuariodedocker/nombredelaapp:latest
 
 # Get started
 
