@@ -50,7 +50,7 @@ func main() {
 	failOnError(err, "Failed to declare a queue")
 
 	// Conexión a la base de datos MySQL
-	db, err := sql.Open("postgres", "postgres://yunior:1234@db:5432/rabbitmq_go?sslmode=disable")
+	db, err := sql.Open("postgres", "postgres://yunior:1234@postgres:5432/rabbitmq_go?sslmode=disable")
 	failOnError(err, "Failed to connect to DB")
 	defer db.Close()
 
