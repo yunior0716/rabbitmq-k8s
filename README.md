@@ -1,9 +1,9 @@
 # Deploy apps to docker hub
 
 docker login
-docker build . -t tu <usuario de docker>/<nombredelaapp>:latest
+docker build . -t tu usuario de docker/nombredelaapp:latest
 
-docker push <tu usuario de docker>/<nombredelaapp>:latest
+docker push tu usuario de docker/nombredelaapp:latest
 
 # Get started
 
@@ -14,8 +14,11 @@ kubectl create ns nombredelnamespace
 # Deploy
 
 kubectl apply -n nombredelnamespace -f .\kubernetes\rabbit-rbac.yaml
+
 kubectl apply -n nombredelnamespace -f .\kubernetes\rabbit-configmap.yaml
+
 kubectl apply -n nombredelnamespace -f .\kubernetes\rabbit-secret.yaml
+
 kubectl apply -n nombredelnamespace -f .\kubernetes\rabbit-statefulset.yaml
 
 # Acces to rabbit
