@@ -1,3 +1,10 @@
+# Deploy apps to docker hub
+
+docker login
+docker build . -t tu <usuario de docker>/<nombredelaapp>:latest
+
+docker push <tu usuario de docker>/<nombredelaapp>:latest
+
 # Get started
 
 minikube start
